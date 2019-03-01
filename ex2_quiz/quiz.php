@@ -8,7 +8,7 @@
     //catches empty case error
     if(empty($ansInput[$i])){
       $attempted--;
-    } elseif($ansKey[$i] = $ansInput[$i]){
+    } elseif($ansKey[$i] == $ansInput[$i]){
       $score++;
     }
   }

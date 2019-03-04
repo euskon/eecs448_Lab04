@@ -22,6 +22,7 @@
   echo "<h1>YOUR SCORE IS: " . (($score / 5) * 100.0) . "%</h1><br>";
   echo "<h2>Number of Q's Correct: " . (int)($score) . "</h2><br>";
   echo "<h2>Number of Q's Attempted: " . $attempted . "</h2><br>";
+  echo "<h3><u>Detailed Feedback: </u></h3>";
   for($q = 0; $q < count($questions); $q++){
     echo "<p>" . $questions[$q] . "<br>";
     echo "You answered: " . $ansInput[$q] . "<br>";

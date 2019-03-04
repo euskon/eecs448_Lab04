@@ -21,7 +21,8 @@ HINT: to give javascript the ability to stop submission, use the event onsubmit 
     </script>
   </head>
   <body>
-    <form action="customerBackend.php" method="post" id="checkout" onsubmit="validateCheckout()>
+    <form action="customerBackend.php" onsubmit="return validateCheckout()"
+          method="post" id="checkout">
       <h1>Checkout: Please submit the following info</h1>
       <div class="login">
         <h3>User Account Info:</h3>

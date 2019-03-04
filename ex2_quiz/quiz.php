@@ -1,7 +1,7 @@
 <?php
   $score = 0.0;
   $attempted = 5;
-  $ansKey = array("regular", "regular", "regular", "regular", "regular");
+  $ansKey = array("regular", "blue", "4", "topeka", "eight");
   $ansInput = array();
   for($i = 0; $i < 5; $i++){
     $ansInput[$i] = $_POST["qa" . ($i+1)];

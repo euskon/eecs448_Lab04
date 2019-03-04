@@ -22,6 +22,7 @@ HINT: to give javascript the ability to stop submission, use the event onsubmit 
   </head>
   <body>
     <form action="customerBackend.php" method="post" id="checkout">
+      <h1>Checkout: Please submit the following info</h1>
       <div class="login">
         <h3>User Account Info:</h3>
         Username(E-mail): <input type="email" name="username" value=""><br>
@@ -31,15 +32,15 @@ HINT: to give javascript the ability to stop submission, use the event onsubmit 
       <h3>Product Selection</h3>
       <div class="row">
         <div class="column">
-          <img id="redGemPic" src="redGemPic.jpg">
+          <img id="redGemPic" src="redGem.jpg">
           <input type="number" name="redQuantity" min="0" value="0">
         </div>
         <div class="column">
-          <img id="blueGemPic" src="blueGemPic.jpg">
+          <img id="blueGemPic" src="blueGem.jpg">
           <input type="number" name="blueQuantity" min="0" value="0">
         </div>
         <div class="column">
-          <img id="greenGemPic" src="greenGemPic.jpg">
+          <img id="greenGemPic" src="greenGem.jpg">
           <input type="number" name="greenQuantity" min="0" value="0">
         </div>
       </div>
@@ -50,7 +51,7 @@ HINT: to give javascript the ability to stop submission, use the event onsubmit 
         <input type="radio" name="shippingInput" value="50.00">$50.00 Overnight<br>
         <input type="radio" name="shippingInput" value="5.00">$5.00 3-Day<br>
       </div>
-
+      <br>
       <input type="submit" onsubmit="formChecker.js">
       <input type="reset">
     </form>

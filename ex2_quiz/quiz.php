@@ -1,5 +1,5 @@
 <?php
-  $score = 0;
+  $score = 0.0;
   $attempted = 5;
   $ansKey = array("regular", "regular", "regular", "regular", "regular");
   $ansInput = array();
@@ -12,8 +12,7 @@
       $score++;
     }
   }
-  echo "<h1>YOUR SCORE IS: " . ($score / 5) . "</h1><br>";
-  echo "<h2>Number of Attempts: " . $attempted . "</h2><br>";
-
-
+  echo "<h1>YOUR SCORE IS: " . (($score / 5) * 100.0) . "%</h1><br>";
+  echo "<h2>Number of Q's Correct: " . int($score) . "</h2><br>";
+  echo "<h2>Number of Q's Attempted: " . $attempted . "</h2><br>";
  ?>

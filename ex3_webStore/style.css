@@ -6,5 +6,8 @@ Styles the store file (including the backend!) */
 
 .column {
   flex: 33.33%;
-  padding: 5px;
+  padding: 3px;
+}
+body {
+  background-color: #7FFFD4;
 }

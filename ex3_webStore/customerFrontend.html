@@ -1,0 +1,56 @@
+<!-- customerFrontend.html
+The form the user interacts with to make purchase choices,
+- give a user name and password,
+- choose shipping options
+- 3 items of different prices
+- You will need to offer 3 types of shipping (radio buttons are great for this):
+-   1. Free 7 day
+-   2. $50.00 over night
+-   3. $5.00 three day
+- Reset button
+- Submit button
+HINT: to give javascript the ability to stop submission, use the event onsubmit -->
+<html>
+  <head>
+    <title> Webstore by Zach </title>
+    <link href="style.css"
+          rel="stylesheet"
+          type="text/css"/>
+    <script type="text/javascript"
+            src="formChecker.js">
+    </script>
+  </head>
+  <body>
+    <form action="customerBackend.php" method="post" id="checkout">
+      <div class="login">
+        <h3>User Account Info:</h3>
+        Username(E-mail): <input type="email" name="username" value=""><br>
+        Password: <input type="password" name="password" value=""><br>
+      </div>
+
+      <h3>Product Selection</h3>
+      <div class="row">
+        <div class="column">
+          <img id="redGemPic" src="redGemPic.jpg">
+          <input type="number" name="redQuantity" min="0" value="0">
+        </div>
+        <div class="column">
+          <img id="blueGemPic" src="blueGemPic.jpg">
+          <input type="number" name="blueQuantity" min="0" value="0">
+        </div>
+        <div class="column">
+          <img id="greenGemPic" src="greenGemPic.jpg">
+          <input type="number" name="greenQuantity" min="0" value="0">
+        </div>
+      </div>
+
+      <div class="shipping">
+        <h3>Shipping</h3>
+        <input type="radio" name="shippingInput" value="0.00" checked>Free 7-Day<br>
+        <input type="radio" name="shippingInput" value="50.00">$50.00 Overnight<br>
+        <input type="radio" name="shippingInput" value="5.00">$5.00 3-Day<br>
+      </div>
+
+      <input type="submit" onsubmit="formChecker.js">
+      <input type="reset">
+    </form>

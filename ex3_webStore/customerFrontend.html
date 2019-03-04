@@ -21,7 +21,7 @@ HINT: to give javascript the ability to stop submission, use the event onsubmit 
     </script>
   </head>
   <body>
-    <form action="customerBackend.php" method="post" id="checkout">
+    <form action="customerBackend.php" method="post" id="checkout" onsubmit="validateCheckout()>
       <h1>Checkout: Please submit the following info</h1>
       <div class="login">
         <h3>User Account Info:</h3>
@@ -52,7 +52,7 @@ HINT: to give javascript the ability to stop submission, use the event onsubmit 
         <input type="radio" name="shippingInput" value="5.00">$5.00 3-Day<br>
       </div>
       <br>
-      <input type="submit" onsubmit="formChecker.js">
+      <input type="submit">
       <input type="reset">
     </form>
   </body>

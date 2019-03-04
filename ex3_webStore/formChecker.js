@@ -13,7 +13,9 @@ function validateCheckout(){
   return false;
 }
 function validatePwLength(){
-  if(document.getElementById("pw").value.length < 0){
+  let pwInput = document.getElementById("pw").value;
+  if(pwInput.length < 1){
+    alert('password empty');
     return false;
   }
   return true;

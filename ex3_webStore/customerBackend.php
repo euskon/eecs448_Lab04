@@ -5,6 +5,6 @@ Processes the purchase
 Prints a receipt -->
 <?php
   echo "<h1>Welcome:" . $_POST["username"] . "</h1><br>";
-  echo "<h6>For Lab Example Purposes Only</h6><br>";
-  echo "PW: " . $_POST["password"] . "<br>";
+  echo "<h6>For Lab Example Purposes Only<br>";
+  echo "PW: " . $_POST["password"] . "</h6><br>";
  ?>
